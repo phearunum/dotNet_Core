@@ -1,0 +1,32 @@
+﻿@model IEnumerable<dotNet.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.userId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.userName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.userPass)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.userAddress)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+
+
